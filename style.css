@@ -1,0 +1,53 @@
+body{
+  margin: 0;
+  padding: 0;
+  
+  background-color: rgb(184, 214, 240);
+}
+
+
+/* CSS for changing link color on hover */
+.navbar-nav a.nav-link:hover {
+  color: rgb(184, 214, 240); /* Change this color to the desired hover color */
+}
+
+.content{
+  margin: 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee p {
+  color: red;
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+
+
+.brand{
+  color: rgb(56, 129, 193);
+ 
+}
+
+
+
+#myNavbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar appears above other content */
+}
